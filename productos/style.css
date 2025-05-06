@@ -1,0 +1,87 @@
+.contenedor{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 75px 100px 1000px 100px;
+    grid-template-areas: 
+    "nav"
+    "header"
+    "productos"
+    "footer";
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    grid-area: nav;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    border-style: solid;
+    background-color:dodgerblue;
+    font-size: 25px;
+}
+header{
+    grid-area: header;
+    font-size: 20px;
+    margin-top: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.productos{
+    margin-top: 200px;
+    grid-area: productos;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 350px 350px;
+    grid-template-areas:
+    "producto1 producto2"
+    "producto3 producto4";
+    gap: 25px;
+}
+.producto1{
+    grid-area: producto1;
+    font-size: 20px;
+    border-style: solid;
+    border-radius: 25px;
+    padding: 10px;
+}
+.producto2{
+    grid-area: producto2;   
+    font-size: 20px;
+    border-style: solid;
+    border-radius: 25px;
+    padding: 10px;
+}
+.producto3{
+    grid-area: producto3;   
+    font-size: 20px;
+    border-style: solid;
+    border-radius: 25px;
+    padding: 10px;
+}
+.producto4{
+    grid-area: producto4;  
+    font-size: 20px;
+    border-style: solid;
+    border-radius: 25px;
+    padding: 10px;
+}
+footer{
+    grid-area: footer;
+    border-style: solid;
+    background-color: dodgerblue;
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+}
+.foto{
+    height: 150px;
+}
+a:link{
+    text-decoration: none;
+    color: black;
+    font-size: 35px;
+}
+a:hover{
+    color: white;
+}
