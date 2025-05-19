@@ -1,7 +1,7 @@
 .contenedor{
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 75px 100px 1000px 100px;
+    grid-template-rows: 75px 100px 1200px 100px;
     grid-template-areas: 
     "nav"
     "header"
@@ -30,11 +30,16 @@ header{
     grid-area: productos;
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: 350px 350px;
+    grid-template-rows: 450px 450px;
     grid-template-areas:
     "producto1 producto2"
     "producto3 producto4";
     gap: 25px;
+}
+.producto1, .producto2, .producto3, .producto4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .producto1{
     grid-area: producto1;
@@ -84,4 +89,33 @@ a:link{
 }
 a:hover{
     color: white;
+}
+
+@media (max-width: 768px) {
+    .contenedor{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 75px 100px 1900px 100px;
+        grid-template-areas: 
+        "nav"
+        "header"
+        "productos"
+        "footer";
+    }
+    .productos{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 400px 400px 400px 400px;
+        grid-template-areas:
+        "producto1"
+        "producto2"
+        "producto3" 
+        "producto4";
+        gap: 25px;
+    }
+    .producto1, .producto2, .producto3, .producto4{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }

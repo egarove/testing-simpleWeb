@@ -65,3 +65,12 @@ a:link{
 a:hover{
     color: white;
 }
+
+@media (max-width: 768px) {
+    .foto2{
+        width: 500px;
+    }
+    main{
+        font-size: 18px;
+    }
+}
